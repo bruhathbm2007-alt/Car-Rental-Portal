@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>DriveEasy</h1>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#booking">Book Now</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- Homepage Banner -->
+    <section class="hero">
+        <div>
+            <h2>Find Your Perfect Ride</h2>
+            <p>Affordable, comfortable and reliable car rentals.</p>
+            <a href="#cars" class="hero-btn">Explore Cars</a>
+        </div>
+    </section>
+
+    <!-- Available Cars -->
+    <main id="cars">
+        <h2>Our Available Cars</h2>
+
+        <div id="cars-container">
+            Loading cars...
+        </div>
+    </main>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+
+        <h2>Book Your Car</h2>
+
+        <p>Fill in your details to book your favourite car.</p>
+
+        <form id="booking-form">
+
+            <input
+                type="text"
+                id="customer_name"
+                placeholder="Your Full Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Your Phone Number"
+                required
+            >
+
+            <select id="car_id" required>
+                <option value="">Select a Car</option>
+            </select>
+
+            <label for="pickup_date">Pickup Date</label>
+            <input type="date" id="pickup_date" required>
+
+            <label for="return_date">Return Date</label>
+            <input type="date" id="return_date" required>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+        <p id="booking-message"></p>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <h2>About DriveEasy</h2>
+
+        <p>
+            DriveEasy makes renting a car simple and convenient.
+            Choose your car and enjoy your journey!
+        </p>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
